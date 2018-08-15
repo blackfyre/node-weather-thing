@@ -1,0 +1,21 @@
+{
+  "name": "weather-thing",
+  "version": "0.0.1",
+  "description": "Weather information Thing for Mozilla WebThings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "iot",
+    "webthing",
+    "weather"
+  ],
+  "author": "Galicz Miklós",
+  "license": "MIT",
+  "dependencies": {
+    "dark-sky": "^1.1.4",
+    "dotenv": "^6.0.0",
+    "webthing": "^0.7.0"
+  }
+}
