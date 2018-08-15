@@ -179,7 +179,7 @@ class DSPrecipitationProbability extends Thing {
 
     createSensorPolling() {
         setInterval(() => {
-            const newLevel = DSResultCollector.currently.precipProbability;
+            const newLevel = DSResultCollector.currently.precipProbability * 100;
             this.level.notifyOfExternalUpdate(newLevel);
         }, 3000);
     }
