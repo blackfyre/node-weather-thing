@@ -118,7 +118,7 @@ class DSHumidity extends Thing {
 
     createSensorPolling() {
         setInterval(() => {
-            const newLevel = DSResultCollector.currently.humidity;
+            const newLevel = DSResultCollector.currently.humidity * 100;
             this.level.notifyOfExternalUpdate(newLevel);
         }, 3000);
     }
