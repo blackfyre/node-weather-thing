@@ -16,10 +16,7 @@ const requestInterval = Math.ceil((24 * 60 * 60 * 1000) / env('CALLS_PER_DAY', 1
 
 /* Let's setup the WebThings, based on the Mozilla docs */
 const {
-    Action,
-    Event,
     Property,
-    SingleThing,
     Thing,
     Value,
     WebThingServer,
@@ -118,7 +115,7 @@ class DSHumidity extends Thing {
 
     createSensorPolling() {
         setInterval(() => {
-            const newLevel = DSResultCollector.currently.humidity;
+            const newLevel = DSResultCollector.currently.humidity * 100;
             this.level.notifyOfExternalUpdate(newLevel);
         }, 3000);
     }
@@ -202,7 +199,9 @@ let DarkSkyRequest = () => {
         .then((response) => {
             DSResultCollector = response;
         })
-        .catch(console.log); // handle your error response.
+        .catch((errorMsg) => {
+            throw errorMsg;
+        }); // handle your error response.
 };
 
 function runServer() {
