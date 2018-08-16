@@ -34,7 +34,10 @@
   },
   "files": [
     "node_modules",
+    "src",
     "index.js",
+    "README.md",
+    "LICENSE",
     "SHA256SUMS"
   ],
   "moziot": {
