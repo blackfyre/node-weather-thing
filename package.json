@@ -1,21 +1,35 @@
 {
-  "name": "weather-thing",
+  "name": "moziot-darksky-weather-adapter",
+  "display_name": "DarkSky Weather Adapter",
   "version": "0.0.2",
-  "description": "Weather information Thing for Mozilla WebThings",
+  "description": "DarkSky Weather Adapter for Mozilla IoT GateWay",
   "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/blackfyre/node-weather-thing/issues"
+  },
+  "homepage": "https://github.com/blackfyre/node-weather-thing",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "iot",
     "webthing",
-    "weather"
+    "weather",
+    "darksky"
   ],
-  "author": "Galicz Miklós",
+  "author": {
+    "name": "Galicz Miklós",
+    "email": "gnick666@gmail.com",
+    "url": "https://blackfyre.ninja/"
+  },
   "license": "MIT",
   "dependencies": {
     "dark-sky": "^1.1.4",
     "dotenv": "^6.0.0",
     "webthing": "^0.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blackfyre/node-weather-thing.git"
   }
 }
