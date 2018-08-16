@@ -190,7 +190,7 @@ let DSResultCollector = {};
 let DarkSkyRequest = () => {
     darksky
         .latitude(process.env.LAT) // required: latitude, string || float.
-        .longitude(process.env.LONG) // required: longitude, string || float.  
+        .longitude(process.env.LONG) // required: longitude, string || float.
         .units(env('UNTI_TYPE', 'auto'))
         .language(env('LANGUAGE', 'en')) // optional: language, string, refer to API documentation.
         .exclude('hourly,minutely,daily') // optional: exclude, string || array, refer to API documentation.
@@ -214,8 +214,8 @@ function runServer() {
     // If adding more than one thing, use MultipleThings() with a name.
     // In the single thing case, the thing's name will be broadcast.
     const server = new WebThingServer(new MultipleThings([temp, wind, precip, hum, uv],
-        'DarkSkyWeatherStation'),
-    8888);
+            'DarkSkyWeatherStation'),
+        8888);
 
     DarkSkyRequest();
 

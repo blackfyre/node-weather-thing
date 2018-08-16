@@ -32,6 +32,11 @@
     "type": "git",
     "url": "https://github.com/blackfyre/node-weather-thing.git"
   },
+  "files": [
+    "node_modules",
+    "index.js",
+    "SHA256SUMS"
+  ],
   "moziot": {
     "api": {
       "min": 1,
