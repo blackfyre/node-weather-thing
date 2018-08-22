@@ -9,13 +9,16 @@
   },
   "homepage": "https://github.com/blackfyre/node-weather-thing",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "package.sh"
   },
   "keywords": [
     "iot",
-    "webthing",
+    "adapter",
     "weather",
-    "darksky"
+    "darksky",
+    "mozilla",
+    "wot"
   ],
   "author": {
     "name": "Galicz Miklós",
@@ -24,13 +27,11 @@
   },
   "license": "MIT",
   "dependencies": {
-    "dark-sky": "^1.1.4",
-    "dotenv": "^6.0.0",
-    "webthing": "^0.7.0"
+    "dark-sky": "^1.1.4"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/blackfyre/node-weather-thing.git"
+    "url": "git+https://github.com/blackfyre/node-weather-thing.git"
   },
   "files": [
     "node_modules",
